@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad - Control de Gastos</title>
+<style>
+  :root { --bg:#f6f8f6; --fg:#16241a; --muted:#52645a; --accent:#2e7d32; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1a12; --fg:#e6efe8; --muted:#9db0a3; --accent:#81c784; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui, "Segoe UI", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 56px; }
+  h1 { font-size:1.7rem; margin-bottom:.2rem; }
+  h2 { margin-top:2rem; font-size:1.15rem; color:var(--accent); }
+  .muted { color:var(--muted); }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; margin:1rem 0; font-size:.95rem; }
+  th, td { border:1px solid rgba(128,128,128,.4); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:rgba(128,128,128,.12); }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">&larr; Control de Gastos</a> · <a href="privacidad.html">English version</a></p>
+
+  <h1>Política de privacidad</h1>
+  <p class="muted">Aplicación: <strong>Control de Gastos</strong> (Android) · Última actualización: 28 de octubre de 2026</p>
+
+  <p>Esta Política de privacidad explica qué información maneja la app Android Control de Gastos («la app», «nosotros»), cómo se usa, dónde se guarda, con quién se comparte y cómo puedes borrarla. Control de Gastos es una herramienta de finanzas personales para llevar tus compras en cuotas, tus gastos fijos mensuales y cuánto corresponde pagar a cada persona. La app es desarrollada y mantenida por un desarrollador individual, que puedes contactar en <a href="mailto:gggp.controldegastos@gmail.com">gggp.controldegastos@gmail.com</a>.</p>
+
+  <h2>1. Resumen</h2>
+  <ul>
+    <li>Los datos que ingresas se quedan en tu teléfono. No tenemos servidores y no recibimos tus datos.</li>
+    <li>Si decides conectar Google Drive, la app guarda un archivo de respaldo en <strong>tu propio</strong> Google Drive para que puedas restaurar o sincronizar tus datos en otros dispositivos.</li>
+    <li>No vendemos, alquilamos ni compartimos tus datos con nadie, no mostramos publicidad y no usamos herramientas de análisis ni de seguimiento.</li>
+  </ul>
+
+  <h2>2. Información que maneja la app</h2>
+  <table>
+    <tr><th>Dato</th><th>De dónde viene</th><th>Dónde se guarda</th></tr>
+    <tr>
+      <td>Registros financieros: compras en cuotas (artículo, monto, fecha del primer cargo, número de cuotas, tarjeta o tienda, titular), gastos fijos (artículo, monto, persona, comercio), cargos en otras divisas y tipos de cambio, sueldo y ajustes de la app</td>
+      <td>Los escribes tú en la app</td>
+      <td>En tu teléfono, en el almacenamiento privado de la app. Si conectas Google Drive, también en un archivo de tu Google Drive.</td>
+    </tr>
+    <tr>
+      <td>Nombres de personas, tarjetas/tiendas y comercios (las «listas»)</td>
+      <td>Los escribes tú en la app</td>
+      <td>Igual que lo anterior</td>
+    </tr>
+    <tr>
+      <td>Correo de tu cuenta de Google (solo si conectas Google Drive)</td>
+      <td>Lo entrega Google cuando das el permiso</td>
+      <td>Solo en tu teléfono, para mostrar qué cuenta está conectada</td>
+    </tr>
+    <tr>
+      <td>Token de acceso de Google (solo si conectas Google Drive)</td>
+      <td>Lo entrega Google Play services</td>
+      <td>La app no lo guarda. Se pide a Google cada vez que se sincroniza, se mantiene en memoria mientras dura la sincronización y luego se descarta.</td>
+    </tr>
+  </table>
+  <p>La app <strong>no</strong> recopila tu nombre, teléfono, contactos, fotos, ubicación, identificadores del dispositivo, ID de publicidad, historial de navegación ni estadísticas de uso, y no lee tus SMS ni tus notificaciones.</p>
+
+  <h2>3. Datos de usuario de Google y acceso a Google Drive</h2>
+  <p>Conectar Google Drive es opcional. Si tocas «Conectar con Google» en <em>Ajustes → Sincronización</em>, la app solicita este único permiso (alcance OAuth):</p>
+  <p><code>https://www.googleapis.com/auth/drive.file</code> — «Ver, editar, crear y eliminar solo los archivos específicos de Google Drive que uses con esta app».</p>
+  <p>Con este alcance, la app solo puede acceder a los archivos que ella misma creó. <strong>No puede</strong> ver, listar, leer ni modificar ninguno de tus otros archivos o carpetas de Google Drive.</p>
+  <p><strong>Qué hace la app con ese permiso:</strong> crea un archivo llamado <code>control-gastos.json</code> en tu Drive con los datos descritos en la sección 2, y lo lee y actualiza para mantener tus dispositivos sincronizados y permitirte restaurar tus datos. También lee el correo de la cuenta de Google conectada para mostrarlo en pantalla.</p>
+  <p><strong>Declaración de uso limitado:</strong> el uso que Control de Gastos haga de la información recibida de las API de Google, y su transferencia a cualquier otra app, se ajustará a la <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado. En concreto, la información recibida de las API de Google se usa únicamente para ofrecer la función de respaldo y sincronización visible en la app; no se transfiere a terceros salvo que sea necesario para ofrecer esa función o para cumplir la ley; no se usa para publicidad, incluida la publicidad personalizada o por intereses; y no la leen personas, salvo con tu consentimiento explícito, por motivos de seguridad o para cumplir la ley aplicable.</p>
+
+  <h2>4. Cómo usamos la información</h2>
+  <ul>
+    <li>Para calcular y mostrar tu resumen mensual, tus cuotas, tus gastos fijos, el monto por persona y tu balance.</li>
+    <li>Para guardar tus datos en el teléfono entre usos.</li>
+    <li>Si conectas Google Drive: para respaldar tus datos y sincronizarlos entre tus dispositivos, combinando los cambios hechos en distintos dispositivos.</li>
+  </ul>
+  <p>No usamos tu información para ningún otro fin, como publicidad, perfilado, decisiones de crédito o entrenamiento de modelos de aprendizaje automático.</p>
+
+  <h2>5. Compartir y divulgar información</h2>
+  <p>No compartimos, vendemos, alquilamos ni divulgamos tu información a terceros. La única comunicación de red que realiza la app es con Google (inicio de sesión y autorización de Google, y la API de Google Drive), y solo cuando has conectado tu cuenta de Google. Esa comunicación usa HTTPS. Tus datos en Google Drive están sujetos a la política de privacidad y a las medidas de seguridad de Google. Solo podríamos divulgar información si la ley lo exige.</p>
+
+  <h2>6. Almacenamiento, seguridad y conservación</h2>
+  <ul>
+    <li><strong>En tu teléfono:</strong> los datos se guardan en el almacenamiento privado de la app, que Android aísla de otras apps. Protege tu dispositivo con bloqueo de pantalla.</li>
+    <li><strong>En Google Drive:</strong> el archivo de sincronización está en tu cuenta y lo protege la seguridad de tu cuenta de Google.</li>
+    <li><strong>Conservación:</strong> tus datos se conservan hasta que los borres. El desarrollador no guarda ninguna copia, porque los datos nunca llegan a él.</li>
+  </ul>
+
+  <h2>7. Tus opciones y cómo borrar tus datos</h2>
+  <ul>
+    <li><strong>Editar o borrar registros:</strong> puedes editar o eliminar cualquier compra, gasto, persona, tarjeta o comercio dentro de la app.</li>
+    <li><strong>Dejar de sincronizar:</strong> en la app, ve a <em>Ajustes → Sincronización → Desconectar</em>.</li>
+    <li><strong>Borrar tus datos de Drive:</strong> elimina el archivo <code>control-gastos.json</code> de tu Google Drive.</li>
+    <li><strong>Revocar el acceso:</strong> quita el acceso de la app en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Borrar los datos del teléfono:</strong> desinstala la app o borra su almacenamiento en los ajustes de Android.</li>
+  </ul>
+  <p>Como el desarrollador no tiene tus datos, borrarlos con los pasos anteriores los elimina por completo. Para cualquier solicitud sobre tus datos también puedes escribir a <a href="mailto:gggp.controldegastos@gmail.com">gggp.controldegastos@gmail.com</a>.</p>
+
+  <h2>8. Menores de edad</h2>
+  <p>La app no está dirigida a menores de 13 años y no recopila conscientemente información personal de ellos.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Si esta política cambia, la nueva versión se publicará en esta dirección con una fecha actualizada. Si los cambios afectan cómo se usan los datos de usuario de Google, la app no los aplicará a datos que ya hayas entregado sin pedirte de nuevo tu consentimiento.</p>
+
+  <h2>10. Contacto</h2>
+  <p>Preguntas sobre esta política o sobre tus datos: <a href="mailto:gggp.controldegastos@gmail.com">gggp.controldegastos@gmail.com</a>.</p>
+</main>
+</body>
+</html>
